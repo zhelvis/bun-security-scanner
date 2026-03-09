@@ -1,0 +1,20 @@
+{
+  "name": "@zhelvis/bun-security-scanner",
+  "version": "0.0.1",
+  "files": ["dist"],
+  "module": "dist/index.js",
+  "type": "module",
+  "devDependencies": {
+    "@hey-api/openapi-ts": "0.94.0",
+    "@types/bun": "latest",
+    "rolldown": "^1.0.0-rc.8"
+  },
+  "peerDependencies": {
+    "typescript": "^5",
+    "valibot": "^1.2.0"
+  },
+  "scripts": {
+    "openapi-ts": "openapi-ts",
+    "build": "rolldown -c rolldown.config.ts"
+  }
+}
