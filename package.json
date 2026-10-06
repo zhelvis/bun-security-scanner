@@ -1,20 +1,27 @@
 {
   "name": "@zhelvis/bun-security-scanner",
-  "version": "0.0.1",
-  "files": ["dist"],
-  "module": "dist/index.js",
+  "version": "0.0.2",
+  "files": [
+    "dist"
+  ],
   "type": "module",
-  "devDependencies": {
-    "@hey-api/openapi-ts": "0.94.0",
-    "@types/bun": "latest",
-    "rolldown": "^1.0.0-rc.8"
-  },
-  "peerDependencies": {
-    "typescript": "^5",
-    "valibot": "^1.2.0"
-  },
+  "module": "dist/index.js",
   "scripts": {
     "openapi-ts": "openapi-ts",
-    "build": "rolldown -c rolldown.config.ts"
+    "build": "rolldown -c rolldown.config.ts",
+    "lint": "oxlint",
+    "fmt": "oxfmt"
+  },
+  "devDependencies": {
+    "@hey-api/openapi-ts": "^0.99.0",
+    "@types/bun": "latest",
+    "oxfmt": "^0.72.0",
+    "oxlint": "^1.87.0",
+    "oxlint-tsgolint": "^7.0.2003",
+    "rolldown": "^1.2.12"
+  },
+  "peerDependencies": {
+    "typescript": "^7.0.2",
+    "valibot": "^1.5.0"
   }
 }
